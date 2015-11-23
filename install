@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set -e
+
+VERSION=1.0.1
+
+TEMPDIR=/tmp/gin
+INSTALLDIR=$HOME/bin
+
+if [[ ! "$PATH" =~ "$INSTALLDIR" ]]; then
+    INSTALLDIR='/usr/local/bin'
+fi
+
+mkdir -p $INSTALLDIR
+mkdir -p $TEMPDIR
+echo "Downloading Gin v$VERSION..."
+curl --location --progress-bar --insecure "https://github.com/richardhodgson/gin/tarball/v$VERSION" | tar -xz -C $TEMPDIR
+cp $TEMPDIR/richardhodgson-gin-*/gin $INSTALLDIR/gin
+chmod +x $INSTALLDIR/gin
+rm -fr $TEMPDIR
+
+echo "Gin (version $VERSION) installed to $INSTALLDIR/gin."
