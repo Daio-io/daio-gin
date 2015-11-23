@@ -15,7 +15,7 @@ mkdir -p $INSTALLDIR
 mkdir -p $TEMPDIR
 echo "Downloading Gin v$VERSION..."
 curl --location --progress-bar --insecure "https://github.com/daio-io/daio-gin/tarball/v$VERSION" | tar -xz -C $TEMPDIR
-cp $TEMPDIR/daio-io-gin-*/gin $INSTALLDIR/gin
+cp $TEMPDIR/Daio-io-daio-gin-*/gin $INSTALLDIR/gin
 chmod +x $INSTALLDIR/gin
 rm -fr $TEMPDIR
 
