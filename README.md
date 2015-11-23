@@ -1,5 +1,7 @@
 # Gin
 
+NOTE: This project was written by https://github.com/richardhodgson/gin. I have only copied to add new features for myself.
+
 A Git inspired client for Subversion.
 
 ## Why?
@@ -12,7 +14,7 @@ Outside of work many of us use `git`, so creating a similar command line DSL mak
 
 Run the installer.
 
-    curl https://raw.github.com/richardhodgson/gin/master/install | bash
+    curl https://raw.github.com/daio-io/gin/master/install | bash
 
 The `gin` executable should now be in your `$PATH`.
 
@@ -31,7 +33,7 @@ For example, branch from the trunk of `myproject` and switch to the new branch:
 
 Running `svn info` will now show the checkout has switched to `http://repo.com/path/to/myproject/branches/some-feature`.
 
-See the [manual](https://github.com/richardhodgson/gin/blob/master/MANUAL.md#gin---a-git-inspired-client-for-subversion) for more commands.
+See the [manual](https://github.com/daio-io/gin/blob/master/MANUAL.md#gin---a-git-inspired-client-for-subversion) for more commands.
 
 ## Project structure
 
@@ -56,6 +58,3 @@ That's more complicated. Whilst that means we can use Git locally, we'd still ha
 ## Why is it named gin?
 
 Its only one letter different than `git` and I like gin.
-
-
-
