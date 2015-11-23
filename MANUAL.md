@@ -17,6 +17,12 @@ List all branches.
 
     gin branch
 
+### Tag
+
+Create a tag.
+
+    gin tag some-tag
+
 ### Checkout
 
 Checkout a branch.
